@@ -5,8 +5,9 @@ body {
   background-color: #f9f9f9;
 }
 
+/* HERO SLIDESHOW */
 .slideshow-img {
-  height: 80vh;
+  height: 85vh;
   object-fit: cover;
   filter: brightness(65%);
 }
@@ -46,13 +47,7 @@ body {
   border-radius: 50%;
 }
 
-/* Cards, Products */
-.products-section {
-  padding: 50px 20px;
-  max-width: 1200px;
-  margin: auto;
-}
-
+/* Product cards */
 .product-card {
   transition: 0.3s;
 }
