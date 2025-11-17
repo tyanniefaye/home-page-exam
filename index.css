@@ -1,88 +1,67 @@
-/* Glow Haven Styles - Extracted CSS File */
-
+/* GENERAL */
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   background-color: #f9f9f9;
 }
 
-header {
-  background-color: #ff8aa0;
-  padding: 20px;
-  text-align: center;
+.slideshow-img {
+  height: 80vh;
+  object-fit: cover;
+  filter: brightness(65%);
+}
+
+.slideshow-title {
+  font-size: 3rem;
+  font-weight: 800;
+  text-shadow: 0 5px 15px rgba(0,0,0,0.7);
+}
+
+.slideshow-text {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  text-shadow: 0 3px 10px rgba(0,0,0,0.6);
+}
+
+.slideshow-btn {
+  background: linear-gradient(90deg,#ff3399,#ff69b4);
+  padding: 12px 35px;
+  border-radius: 40px;
+  font-size: 1.1rem;
   color: white;
-  font-size: 2rem;
   font-weight: bold;
-}
-
-.navbar {
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-  padding: 15px 0;
-}
-
-.navbar a {
   text-decoration: none;
-  color: #333;
-  font-weight: 600;
-  transition: 0.3s;
 }
 
-.navbar a:hover {
-  color: #ff4d6d;
+.slideshow-btn:hover {
+  background: linear-gradient(90deg,#ff1a8c,#ff4da6);
+  color: #fff;
 }
 
+/* Indicators */
+.carousel-indicators button {
+  background-color: #ff66b2;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+/* Cards, Products */
 .products-section {
   padding: 50px 20px;
   max-width: 1200px;
   margin: auto;
 }
 
-.section-title {
-  text-align: center;
-  font-size: 2.3rem;
-  margin-bottom: 20px;
-}
-
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 25px;
-}
-
 .product-card {
-  background: white;
-  border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s;
+  transition: 0.3s;
 }
 
 .product-card:hover {
   transform: translateY(-5px);
 }
 
-.product-card img {
-  width: 100%;
-  border-radius: 10px;
-}
-
-.product-name {
-  font-size: 1.2rem;
-  margin: 10px 0;
-}
-
-.product-price {
-  color: #e63950;
-  font-weight: bold;
-  font-size: 1.1rem;
-}
-
+/* Footer */
 footer {
-  background-color: #222;
-  color: white;
-  padding: 30px;
-  text-align: center;
   margin-top: 50px;
 }
